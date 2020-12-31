@@ -1,0 +1,16 @@
+title: Repo1
+description: WEB101x_03_VN/Các thẻ HTML phổ biến/Lab1
+template:
+  repo: repo1-template
+  name: repo1
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
